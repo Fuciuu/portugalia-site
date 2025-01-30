@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Travel Info</title>
+</head>
+<body>
+    <h1>Explore the culinar Diversity</h1>
+    
+    <h2>Romania Food&Drinks</h2>
+    
+    <img class="center" src="img/fructute.jpg" alt="Fructe" usemap="#worldmap">
+
+    <map name="worldmap">
+        <area shape="rect" coords="316,264,210,126" href="https://en.wikipedia.org/wiki/Grape" target="_blank" alt="Europe">
+        <area shape="circle" coords="146,258,62" href="https://en.wikipedia.org/wiki/Apple" target="_blank" alt="Asia">
+        <area shape="circle" coords="241,312,44" href="https://ro.wikipedia.org/wiki/Kiwi_(fruct)" target="_blank" alt="Asia">
+    </map>
+
+    <div class="form-container">
+        <h2>Culinary interests</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+    
+            
+    
+            <div class="form-group">
+                <label for="date">Enter your birth date here:</label>
+                <input type="date" id="date" name="date">
+            </div>
+    
+            <div class="form-group">
+                <label>Drinks preferences:</label>
+                <table>
+                    <tr>
+                        <td><label for="Drinks">Palinca</label></td>
+                        <td><input type="checkbox" id="Palinca" name="Drinks preferences" value="Palinca"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Drinks">Wine</label></td>
+                        <td><input type="checkbox" id="Wine" name="Drinks preferences" value="Wine"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Drinks">Visinata</label></td>
+                        <td><input type="checkbox" id="Visinata" name="Drinks preferences" value="Visinata"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Drinks">Coniac</label></td>
+                        <td><input type="checkbox" id="Coniac" name="Drinks preferences" value="Coniac"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label>Food preferences:</label>
+                <table>
+                    <tr>
+                        <td><label for="Food">Sarmale</label></td>
+                        <td><input type="checkbox" id="Sarmale" name="Food preferences" value="Sarmale"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Food">Mamaliga</label></td>
+                        <td><input type="checkbox" id="Mamaliga" name="Food preferences" value="Mamaliga"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Food">Ciorba de Burta</label></td>
+                        <td><input type="checkbox" id="Ciorba de Burta" name="Food preferences" value="Ciorba de Burta"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Food">Mici</label></td>
+                        <td><input type="checkbox" id="Mici" name="Food preferences" value="Mici"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="form-group">
+                <label>Wine Type:</label>
+                <table>
+                    <tr>
+                        <td><label for="Wine">Dulce</label></td>
+                        <td><input type="radio" id="Dulce" name="Wine Type" value="Dulce"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Wine">Demidulce</label></td>
+                        <td><input type="radio" id="Demidulce" name="Wine Type" value="Demidulce"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Wine">Sec</label></td>
+                        <td><input type="radio" id="Sec" name="Wine Type" value="Sec"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Wine">Demisec</label></td>
+                        <td><input type="radio" id="Demisec" name="Wine Type" value="Demisec"></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="form-group">
+                <label>Type of Palinca:</label>
+                <table>
+                    <tr>
+                        <td><label for="palinca">de pruna</label></td>
+                        <td><input type="radio" id="de pruna" name="Type of Palinca" value="de pruna"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="palinca">de mere</label></td>
+                        <td><input type="radio" id="de mere" name="Type of Palinca" value="de mere"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="palinca">de gutui</label></td>
+                        <td><input type="radio" id="de gutui" name="Type of Palinca" value="de gutui"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="palinca">de piersica</label></td>
+                        <td><input type="radio" id="de piersici" name="Type of Palinca" value="de piersica"></td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="form-group">
+                <label for="comments">We want your opinion:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Any other preferences or comments..."></textarea>
+            </div>
+    
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
